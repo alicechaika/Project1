@@ -33,7 +33,7 @@ function GetRandomSymbol(symbols){
 
 async function FetchPriceOfCryptoSymbol(chosenSymbol, randomSymbols){
     if(randomSymbols.includes(chosenSymbol)){
-        let secondResponse = await fetch('https://api.api-ninjas.com/v1/cryptoprice?symbol=LTCBTC', {
+        let secondResponse = await fetch('https://api.api-ninjas.com/v1/cryptoprice?symbol= + chosenSymbol', {
             headers: {
                 'X-Api-Key' :  '9gPhQARMpxVPgYxRTbZBwg==RTcQ1cw7trdlrYlK'
             }
